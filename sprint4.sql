@@ -73,16 +73,16 @@ INSERT INTO trem (id_viagem, status, numeracao) VALUES (4, 'inativo', 'T10504');
 INSERT INTO trem (id_viagem, status, numeracao) VALUES (5, 'ativo', 'T10505');
 
 -- Inserções para itens
-INSERT INTO item (nome, abreviacao, url, id_funcionario) 
-VALUES ('Teclado', 'TCL', 'https://equipamentos.ccr.com.br/teclado', 1);
-INSERT INTO item (nome, abreviacao, url, id_funcionario) 
-VALUES ('Monitor', 'MON', 'https://equipamentos.ccr.com.br/monitor', 2);
-INSERT INTO item (nome, abreviacao, url, id_funcionario) 
-VALUES ('Radio', 'RAD', 'https://equipamentos.ccr.com.br/radio', 3);
-INSERT INTO item (nome, abreviacao, url, id_funcionario) 
-VALUES ('Tablet', 'TAB', 'https://equipamentos.ccr.com.br/tablet', 4);
-INSERT INTO item (nome, abreviacao, url, id_funcionario) 
-VALUES ('Smartphone', 'SMP', 'https://equipamentos.ccr.com.br/smartphone', 5);
+INSERT INTO item (nome, abreviacao, url, favorito, id_funcionario) 
+VALUES ('Teclado', 'TCL', 'https://equipamentos.ccr.com.br/teclado', 1, 1);
+INSERT INTO item (nome, abreviacao, url, favorito, id_funcionario) 
+VALUES ('Monitor', 'MON', 'https://equipamentos.ccr.com.br/monitor', 0, 2);
+INSERT INTO item (nome, abreviacao, url, favorito, id_funcionario) 
+VALUES ('Radio', 'RAD', 'https://equipamentos.ccr.com.br/radio', 0, 3);
+INSERT INTO item (nome, abreviacao, url, favorito, id_funcionario) 
+VALUES ('Tablet', 'TAB', 'https://equipamentos.ccr.com.br/tablet', 1, 4);
+INSERT INTO item (nome, abreviacao, url, favorito, id_funcionario) 
+VALUES ('Smartphone', 'SMP', 'https://equipamentos.ccr.com.br/smartphone', 0, 5);
 
 -- Inserções para tabelas associativas (DML)
 INSERT INTO linha_estacao (id_linha, id_estacao) VALUES (2, 1);
